@@ -17,6 +17,6 @@ jobs:
     - name: scan image
       uses: docker/scout-action@v1.6.4
       with:
-        dockerhub-user: ${{DOCKER_USER }}
-        dockerhub-password: ${{DOCKER_PASSWORD}}
+        dockerhub-user: ${{ secrets.DOCKER_USER }}
+        dockerhub-password: ${{ secrets.DOCKER_PASSWORD }}
       
