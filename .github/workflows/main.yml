@@ -19,4 +19,5 @@ jobs:
       with:
         dockerhub-user: ${{ secrets.DOCKER_USER }}
         dockerhub-password: ${{ secrets.DOCKER_PASSWORD }}
+        write-comment: false
       
