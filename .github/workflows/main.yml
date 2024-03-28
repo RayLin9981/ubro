@@ -22,6 +22,7 @@ jobs:
         dockerhub-user: ${{ secrets.DOCKER_USER }}
         dockerhub-password: ${{ secrets.DOCKER_PASSWORD }}
         write-comment: true
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+        #github-token: ${{ secrets.GITHUB_TOKEN }}
+        command: quickview,cves
         
       
