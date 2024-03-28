@@ -10,8 +10,8 @@ jobs:
     steps:
     - name: checkout
       uses: actions/checkout@v4.1.2
-    - name: setup docker
-      uses: docker-practice/actions-setup-docker@v1
+   # - name: setup docker
+   #   uses: docker-practice/actions-setup-docker@v1
     - name:  build image
       run: docker build -f Dockerfile -t myapp:test .
     - name: scan image
