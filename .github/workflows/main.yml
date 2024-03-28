@@ -16,3 +16,7 @@ jobs:
       run: docker build -f Dockerfile -t myapp:test .
     - name: scan image
       uses: docker/scout-action@v1.6.4
+      with:
+        dockerhub-user:
+        dockerhub-password
+      
