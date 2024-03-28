@@ -14,6 +14,8 @@ jobs:
    #   uses: docker-practice/actions-setup-docker@v1
     - name:  build image
       run: docker build -f Dockerfile -t myapp:test .
+    - name: testing docker login
+      run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USER }} --password-stdin
     - name: scan image
       uses: docker/scout-action@v1.6.4
       with:
