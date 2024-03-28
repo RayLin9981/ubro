@@ -19,5 +19,7 @@ jobs:
       with:
         dockerhub-user: ${{ secrets.DOCKER_USER }}
         dockerhub-password: ${{ secrets.DOCKER_PASSWORD }}
-        write-comment: false
+        write-comment: true
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        
       
